@@ -20,3 +20,58 @@ canvas {
   background-size: cover;
   background-position: 50% 50%;
 }
+.fly-in-text{
+  list-style: none;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 15%;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
+
+}
+.fly-in-text li{
+  display: inline-block;
+  color:#fff;
+  margin-right: 40px;
+  font-family: "open sans";
+  font-size: 7em;
+  font-weight: 100;
+  transition: all 2s ease;
+}
+.fly-in-text.hidden li{
+  opacity: 0;
+}
+.fly-in-text.hidden li:nth-child(1){
+  transform: translateX(-200px) translateY(100px);
+}
+.fly-in-text.hidden li:nth-child(2){
+  transform: translateX(-80px) translateY(30px);
+}
+.fly-in-text.hidden li:nth-child(3){
+  transform: translateX(-200px) translateY(70px);
+}
+.fly-in-text.hidden li:nth-child(4){
+  transform: translateX(300px) translateY(-100px);
+}
+.fly-in-text.hidden li:nth-child(5){
+  transform: translateX(-200px) translateY(300px);
+}
+.fly-in-text.hidden li:nth-child(6){
+  transform: translateX(400px) translateY(-200px);
+}
+.fly-in-text.hidden li:nth-child(7){
+  transform: translateX(-200px) translateY(-200px);
+}
+
+.fly-in-text.hidden li:nth-child(8){
+  transform: translateX(300px) translateY(20px);
+}
+.fly-in-text.hidden li:nth-child(9){
+  transform: translateX(-200px) translateY(-200px);
+}
+
+/* #lineDrawing{
+  position: absolute;
+  z-index: 10000!important;
+} */
